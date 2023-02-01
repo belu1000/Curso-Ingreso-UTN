@@ -10,4 +10,3 @@ function mostrar()
 	nombre = prompt("Ingrese un nombre", "Belu");
 	alert(nombre);
 }
-

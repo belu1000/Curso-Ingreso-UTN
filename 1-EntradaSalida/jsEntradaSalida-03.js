@@ -7,8 +7,7 @@ function mostrar()
 {
 	
 	let nombreIngresado;
-	nombreIngresado = document.getElementById
-	("txtIdNombre").value;
+	nombreIngresado = document.getElementById("txtIdNombre").value;
 	alert(nombreIngresado);
 	
 }
