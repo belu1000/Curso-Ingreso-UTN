@@ -8,7 +8,7 @@ function sumar() {
 	let numeroDos;
 	numeroUno = document.getElementById("txtIdNumeroUno").value;
 	numeroUno = parseInt(numeroUno);
-	numeroDos = document.getElementById("txtIdNumeroDoss").value;
+	numeroDos = document.getElementById("txtIdNumeroDos").value;
 	numeroDos = parseInt(numeroDos);
 
 
@@ -17,13 +17,55 @@ function sumar() {
 
 function restar() {
 
+	let numeroUno;
+    let numeroDos;
+	let resultado;
+
+
+	
+	numeroUno = document.getElementById("txtIdNumeroUno").value;
+	numeroUno = parseInt(numeroUno);
+	numeroDos = document.getElementById("txtIdNumeroDos").value;
+	numeroDos = parseInt(numeroDos);
+    
+	resultado = numeroUno - numeroDos;
+	
+
+	alert(" La resta es " + resultado);
 }
 
 function multiplicar() {
+	let numeroUno;
+	let numeroDos;
+	let resultado;
 
+	
+	numeroUno = document.getElementById("txtIdNumeroUno").value;
+	numeroUno = parseInt(numeroUno);
+	numeroDos = document.getElementById("txtIdNumeroDos").value;
+	numeroDos = parseInt(numeroDos);
+
+	resultado = numeroUno * numeroDos;
+    alert("El resultado de la Multiplicacion es  " + resultado);
 }
 
 function dividir() {
+
+	let numeroUno;
+	let numeroDos;
+	let resultado;
+    
+	numeroUno = document.getElementById("txtIdNumeroUno").value;
+	numeroUno = parseInt(numeroUno);
+	numeroDos = document.getElementById("txtIdNumeroDos").value;
+	numeroDos = parseInt(numeroDos);
+    
+
+	resultado = numeroUno / numeroDos;
+	alert("El resultado de la division es  " + resultado);
+
+	console.log("Despues de parcear  entero, numeroUno es de tipo " + typeof numeroUno + ", numeroDos es de tipo " + typeof numeroDos);
+	console.log("Resultado es de tipo " + typeof resultado);
 
 }
 

@@ -18,5 +18,5 @@ function SacarResto() {
 	divisor = parseInt(divisor);
 
 	resultado = (dividendo % divisor);
-	alert("El resultado de la operaciion es: " + resultado);
+	alert("El resultado de la operacion es: " + resultado);
 }
