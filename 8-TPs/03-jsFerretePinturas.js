@@ -6,14 +6,35 @@ function FahrenheitCentigrados ()
 {
     let fahrenheit;
     let centigrados;
+    let resultado;
+    const VALORFaherenheit = 1.8;
+    
+
 
     fahrenheit = document.getElementById("txtIdTemperatura").value;
-    fahrenheit = parseInt(fahrenheit)
+    fahrenheit = parseInt(fahrenheit);
 	
-    centigrados =
+    centigrados = (fahrenheit - 32) / 1.8;
+    resultado = centigrados;
+
+    alert(resultado);
+
 }
 
 function CentigradosFahrenheit () 
-{
-	
+{   let centigrados;
+    let fahrenheit;
+    let resultado;
+    const VALORCENTIGRADO = 32
+    const VALORFAHERENHEIT = 1.8
+    
+
+
+    centigrados = document.getElementById("txtIdTemperatura").value;
+    centigrados = parseInt(centigrado);
+
+    fahrenheit = centigrados * 1.8 + 32;
+	resultados = fahrenheit
+
+    alert(centigrados + " centigrados es igual a " + resultado + " fahrenheit")
 }
