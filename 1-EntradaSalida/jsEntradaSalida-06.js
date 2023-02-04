@@ -12,7 +12,6 @@ function sumar()
 
 	numeroUno = document.getElementById("txtIdNumeroUno").value;
 	numeroDos = document.getElementById("txtIdNumeroDos").value;
-
     
 	// parseInt(numeroUno);
 	// parseInt(numeroDos); 
@@ -31,7 +30,7 @@ function sumar()
 	
     // tipo1 = typeof numeroUno;
 	// tipo2 = typeof numeroDos; 
-	   
+	
 	// alert(tipo1);
 	// alert(tipo2);
 	alert(" la suma de los numero es igual a " + resultado);

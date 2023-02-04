@@ -2,39 +2,34 @@
 A.	Al ingresar una temperatura en Fahrenheit debemos mostrar la temperatura en Centígrados con un mensaje concatenado (ej.: " 32 Fahrenheit son 0 centígrados").
 B.	Al ingresar una temperatura en Centígrados debemos mostrar la temperatura en Fahrenheit (ej.: "0  centígrados son 32 Fahrenheit ").
 */
-function FahrenheitCentigrados () 
-{
+function FahrenheitCentigrados() {
     let fahrenheit;
-    let centigrados;
     let resultado;
-    const VALORFaherenheit = 1.8;
-    
-
+    const VALORFAHERENHEIT = 1.8;
+    const VALORCENTIGRADO = 32;
 
     fahrenheit = document.getElementById("txtIdTemperatura").value;
     fahrenheit = parseInt(fahrenheit);
-	
-    centigrados = (fahrenheit - 32) / 1.8;
-    resultado = centigrados;
 
-    alert(resultado);
+    resultado = (fahrenheit - 32) / VALORFAHERENHEIT;
+    resultado = resultado.toFixed(2);
+
+    // ej: "32 Fahrenheit son 0 centígrados"
+    alert( fahrenheit + " Fahrenheit son " + resultado + " Centígrados ");
 
 }
 
-function CentigradosFahrenheit () 
-{   let centigrados;
+function CentigradosFahrenheit() {
+    let centigrados;
     let fahrenheit;
-    let resultado;
-    const VALORCENTIGRADO = 32
-    const VALORFAHERENHEIT = 1.8
-    
-
+    const VALORCENTIGRADO = 32;
+    const VALORFAHERENHEIT = 1.8;
 
     centigrados = document.getElementById("txtIdTemperatura").value;
-    centigrados = parseInt(centigrado);
+    centigrados = parseInt(centigrados);
 
-    fahrenheit = centigrados * 1.8 + 32;
-	resultados = fahrenheit
+    fahrenheit = centigrados * VALORFAHERENHEIT  + VALORCENTIGRADO;
+    fahrenheit = fahrenheit.toFixed(2);
 
-    alert(centigrados + " centigrados es igual a " + resultado + " fahrenheit")
+    alert(centigrados + " centigrados es igual a " + fahrenheit + " fahrenheit");
 }
