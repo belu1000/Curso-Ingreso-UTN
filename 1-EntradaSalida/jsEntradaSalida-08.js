@@ -5,6 +5,7 @@ mostrar el resto entre el dividendo y el divisor.
 ej.: "El resto es 0 ."*/
 
 // Alumno Belen Pantoja 
+// Ejercicio 8 Div J con Correccciones
 function SacarResto() {
 	let dividendo;
 	let divisor;

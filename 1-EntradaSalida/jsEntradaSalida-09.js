@@ -3,7 +3,8 @@ Debemos lograr tomar el importe por ID ,
 transformarlo a entero (parseInt), luego
 mostrar el importe con un aumento del 10 %
 en el cuadro de texto "RESULTADO".*/
-// Alumno Belen Pantoja
+// Alumno Belen Pantoja Div J 
+// Ejerecicio 9 bis
 function mostrarAumento() {// declaro variables
 	let importe;
 	let resultado;

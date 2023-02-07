@@ -3,73 +3,63 @@ A.	 mostrar la cantidad de alambre a comprar  si se ingresara el largo y el anch
 B.	mostrar la cantidad de alambre a comprar  si se ingresara el radio  de un terreno circular y se debe alambra con tres hilos de alambre.
 C.	Para hacer un contrapiso de 1m x 1m se necesitan 2 bolsas de cemento y 3 de cal, debemos mostrar cuantas bolsas se necesitan de cada uno para las medidas que nos ingresen.
 */
-// ALUMNA BELEN PANTOJA
-// TP 2 
+// ALUMNA BELEN PANTOJA Divion J
+// TP 2 Con CORRECCIONES
 
-function Rectangulo () 
-{
-    let largo;
-    let ancho;
-    let perimetro;
-    let resultado ;
-    const cantAlambre = 3;
-    
-    largo = document.getElementById("txtIdLargo").value;
-    largo = parseInt(largo);
-    ancho = document.getElementById("txtIdAncho").value;
-    ancho = parseInt(ancho);
-    perimetro = document.getElementById("txtIdRadio").value;
-    perimetro = parseInt(perimetro);
-    
-
-    perimetro + largo * 2 + ancho *2;
-    resultado = perimetro * cantAlambre;
-    
-    alert(" Se necesita un total de  " + resultado);
-
-}
-function Circulo () 
-{
-	let radio;
-    let perimetro;
-    const PT = 3.14;
-    const cantAlambre = 3;
+function Rectangulo() {
+    let altura;
+    let base;
     let resultado;
+    const cantAlambre = 3;
 
+    altura = document.getElementById("txtIdLargo").value;
+    altura = parseFloat(altura);
+    base = document.getElementById("txtIdAncho").value;
+    base = parseFloat(base);
 
-    radio = document.getElement("txtIdLargo").value;
-    radio = parseInt(radio);
+    // perimetro = 2 * (base + altura)
+    resultado = (2 * (base + altura)) * cantAlambre;
+    resultado = resultado.toFixed(2);
 
-    perimetro = 2 * PI * radio;
-    alert(perimetro);
-
-    resultado = perimetro * 3;
-
-    alert ("Se necesita un total de " + resultado);
-
-
-
+    alert(" Se necesita un total de  " + resultado + " metros de alambre");
 
 }
-function Materiales () 
-{   let ancho;
-    let largo;
+function Circulo() {
+    let radio;
+    const PI = 3.14;
+    const CANTIDADALAMBRE = 3;
+    let resultado;
+    let perimetro;
+
+    radio = document.getElementById("txtIdRadio").value;
+    radio = parseFloat(radio);
+    // Perímetro de un círculo = 2. π x r
+    perimetro = 2 * PI * radio;
+
+    resultado = perimetro * CANTIDADALAMBRE;
+
+    alert("Se necesita un total de " + resultado + " metros de alambre");
+}
+function Materiales() {
+    let altura;
+    let base;
     const CEMENTO = 2;
-    const CALL = 3;
-    let totalCall;
-    let areRectangulo;
-    let totalCemento;
+    const CAL = 3;
+    let superficie;
+    let resultadoCemento;
+    let resultadoCal;
 
-    
+    altura = document.getElementById("txtIdLargo").value;
+    altura = parseFloat(altura);
+    base= document.getElementById("txtIdAncho").value;
+    base = parseFloat(base);
 
-    largo = document.getElementById("txtIdLargo").value;
-    largo = parseInt(largo);
-    ancho = document.getElementById("txtIdAncho").value;
-    ancho = parseInt(ancho);
-	
-    areRectangulo - ancho * areRectangulo;
+    superficie = altura * base;
 
-    totalCemento = CEMENTO * areaRectangulo;
-    totalCall = CALL * areaRectangulo;
-    alert (" Se requiere de call " + totalCall " & se necesita " + totalCemento);
+    resultadoCemento = superficie* CEMENTO;
+    resultadoCal = superficie * CAL;
+
+    console.log("ResultaCal: " + resultadoCal+ "tipo de dato " +typeof resultadoCal);
+
+    alert( " Necesitas de cal " + resultadoCal +" Y de cemento " + resultadoCemento );
 }
