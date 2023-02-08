@@ -1,3 +1,5 @@
+// Alumno Belen Pantoja
+// Ejercicio If3
 function mostrar() {
 
 	//tomo la edad 

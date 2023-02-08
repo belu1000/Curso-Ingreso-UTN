@@ -1,4 +1,6 @@
-function mostrar()
+ // Alumna Belen Pantoja Div J
+ // Ejercicio IF 2
+ function mostrar()
 {
 	//tomo la edad  
 	let edad;
