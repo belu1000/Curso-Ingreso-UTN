@@ -9,14 +9,16 @@ function mostrar() {
 	edad = parseInt(edad);
 
 	if (edad < 18) {
-		if (edad == " soltero") {
-			alert("Es muy pequeño para NO ser soltero");
+		if (estadoCivil == "Casado") {
+			alert("Es muy pequeño para  NO ser soltero");
+		}
+		else {
+			if (estadoCivil == "Divorciado") {
+				alert("Es muy pequeño para  NO ser soltero");
+			}
+
 		}
 	}
-	else {
-		if (edad > 18)
-
-			}
 
 }
 
