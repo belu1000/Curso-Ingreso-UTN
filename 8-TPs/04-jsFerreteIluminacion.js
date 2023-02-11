@@ -95,3 +95,35 @@ function CalcularPrecio ()
     alert(mensaje);
     alert(precioFinal);
 }
+
+// {
+// let cantidadDeLamparas;
+// let marca;
+// let precioDescuento;
+// let valorporcentaje;
+// let precioFinal;
+// const PRECIO_LAMPARAS = 35
+
+// cantidadDeLamparas = document.getElementById("txtIdCantidad").value;
+// cantidadDeLamparas = parseInt(cantidadDeLamparas);
+
+// marca = document.getElementById("Marca").value;
+
+// precioDescuento = document.getElementById("txtIdprecioDescuento").value;
+// precioDescuento = parseInt(precioDescuento);
+
+// valorporcentaje = (cantidadDeLamparas * PRECIO_LAMPARAS ) / 100;
+
+// precioFinal =  
+// if (cantidadDeLamparas >=  6) {
+//     descuento = ((valorPorcentaje * 50 ) /100) - 50;
+        
+//         else {
+//             if (valorlamparas == 5)
+//             descuento = ((valorPorcentaje * 40) / 100);
+            
+//             else {
+//                 if (can)
+//             }
+//         }
+// }
