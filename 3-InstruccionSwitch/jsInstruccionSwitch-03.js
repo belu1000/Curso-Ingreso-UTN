@@ -1,5 +1,5 @@
-function mostrar()
-{
+// //Alumna Belen Pantoja  39201936 div J   Ejercicio switch 3
+function mostrar() {
 	//tomo el mes
 	let mesDelAño;
 
@@ -20,7 +20,7 @@ function mostrar()
 		case "Octubre":
 		case "Noviembre":
 		case "Diciembre":
-            alert("Este mes tiene 30 o más días")
+			alert("Este mes tiene 30 o más días")
 		default:
 			break;
 	}

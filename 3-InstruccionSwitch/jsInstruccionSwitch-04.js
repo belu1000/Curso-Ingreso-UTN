@@ -1,3 +1,4 @@
+// // //Alumna Belen Pantoja  39201936 div J   Ejercicio switch 4
 function mostrar() {
 	//tomo el mes
 	let mesDelAño;
@@ -29,5 +30,4 @@ function mostrar() {
 		default:
 			break;
 	}
-
 }//FIN DE LA FUNCIÓN

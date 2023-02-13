@@ -1,77 +1,113 @@
-function CalcularPrecio() {
-let cantidadDelamparas;
-let marca;
-let precioDescuento;
-let precioFinal;
-let IIBB;
-const PRECIO_LAMP = 35;
 
-cantidadDelamparas = document.getElementById("txtIdCantidad").value;
-cantidadDelamparas = parseInt(cantidadDelamparas);
 
-marca = document.getElementById("Marca").value;
 
-switch (cantidadDelamparas) {
-    case 6 :
-    if (cantidadDelamparas >=6 ) {
-        precioDescuento = (PRECIO_LAMP * 50) /100;
-        precioFinal = (PRECIO_LAMP * cantidadDelamparas)  - precioDescuento;
-    }
-    break;
-    case 5:
-        switch (marca) {
-            case "ArgentinaLuz":
-                precioDescuento = (PRECIO_LAMP *40) /100;
-                precioFinal = (PRECIO_LAMP * cantidadDelamparas)  - precioDescuento;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////
+/// Alumna Belen Pantoja dni 39201396 dIV J TP4 switch  CON CORRECIONES 
+// function CalcularPrecio() {
+// let cantidadDelamparas;
+// let marca;
+// let precioDescuento;
+// let precioFinal;
+// let IIBB;
+// const PRECIO_LAMP = 35;
+
+// cantidadDelamparas = document.getElementById("txtIdCantidad").value;
+// cantidadDelamparas = parseInt(cantidadDelamparas);
+
+// marca = document.getElementById("Marca").value;
+
+// switch (cantidadDelamparas) {
+//     case 5:
+//         switch (marca) {
+//             case "ArgentinaLuz":
+//                 precioDescuento = (PRECIO_LAMP *40) /100;
+//                 precioFinal = (PRECIO_LAMP * cantidadDelamparas)  - precioDescuento;
                 
-                break;
-            case "JeLuz":
-            case "Hazlluminazion":
-            case "Osram":
-            precioDescuento = (PRECIO_LAMP * 30) / 100;
-            precioFinal = PRECIO_LAMP - precioDescuento;
-            break;
-        }
-    break;
-    case 4:
-        switch (marca) {
-            case "ArgentinaLuz":
-            case "FelipeLamparas":
-            precioDescuento = (PRECIO_LAMP * 25) / 100;
-            precioFIinal = (PRECIO_LAMP * cantidadDelamparas) - precioDescuento;
-                break;
-            case "JeLuz":
-            case "Hazlluminazion":
-            case "Osram":
-            precioDescuento = (PRECIO_LAMP * 20 )/ 100;
-            precioFinal = (PRECIO_LAMP * cantidadDelamparas) - precioDescuento;
-        }
-    break;
-    case 3:
-        switch (marca) {
-            case "ArgentinaLuz":
-                precioDescuento = (PRECIO_LAMP * 15) /100;
-                precioFinal = (PRECIO_LAMP * cantidadDelamparas) - precioDescuento;
-            break;
-            case "FelipeLamparas":
-                precioDescuento = (PRECIO_LAMP * 10) / 100;
-                precioFinal = (PRECIO_LAMP * cantidadDelamparas) - precioDescuento;
-                break;
-        }
-    
-    break;
-    default :
-        if (precioFinal >120){
-            precioDescuento = (PRECIO_LAMP * 10) / 100;
-            precioIIBB = (PRECIO_LAMP * cantidadDelamparas) + precioDescuento;
-        }
-    Alert("Usted pago" + precioIIBB + " siendo el " + precioDescuento + " que se pago")
-}
-            document.getElementById("txtIdprecioDescuento").value = precioDescuento;
+//                 break;
+//             case "JeLuz":
+//             case "Hazlluminazion":
+//             case "Osram":
+//             precioDescuento = (PRECIO_LAMP * 30) / 100;
+//             precioFinal = PRECIO_LAMP - precioDescuento;
+//             break;
+//         }
+//     break;
+//     case 4:
+//         switch (marca) {
+//             case "ArgentinaLuz":
+//             case "FelipeLamparas":
+//             precioDescuento = (PRECIO_LAMP * 25) / 100;
+//             precioFIinal = (PRECIO_LAMP * cantidadDelamparas) - precioDescuento;
+//                 break;
+//             case "JeLuz":
+//             case "Hazlluminazion":
+//             case "Osram":
+//             precioDescuento = (PRECIO_LAMP * 20 )/ 100;
+//             precioFinal = (PRECIO_LAMP * cantidadDelamparas) - precioDescuento;
+//         }
+//     break;
+//     case 3:
+//         switch (marca) {
+//             case "ArgentinaLuz":
+//                 precioDescuento = (PRECIO_LAMP * 15) /100;
+//                 precioFinal = (PRECIO_LAMP * cantidadDelamparas) - precioDescuento;
+//             break;
+//             case "FelipeLamparas":
+//                 precioDescuento = (PRECIO_LAMP * 10) / 100;
+//                 precioFinal = (PRECIO_LAMP * cantidadDelamparas) - precioDescuento;
+//                 break;
+//         }
+//     break;
+//     default :
+//     if (cantidadDelamparas >=6 ) {
+//         precioDescuento = (PRECIO_LAMP * 50) /100;
+//         precioFinal = (PRECIO_LAMP * cantidadDelamparas)  - precioDescuento;
+//     }
+// }
+// document.getElementById("txtIdprecioDescuento").value = precioDescuento;
+// if (precioFinal >120){
+//     precioDescuento = (PRECIO_LAMP * 10) / 100;
+//     precioIIBB = (PRECIO_LAMP * cantidadDelamparas) + precioDescuento;
+// }
+// alert("Usted pago" + precioIIBB + " siendo el " + precioDescuento + " que se pago");
+// }      
 
-}
-
-
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 

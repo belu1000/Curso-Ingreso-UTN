@@ -1,3 +1,4 @@
+//Alumna Belen Pantoja  39201936 div J   Ejercicio If  5
 function mostrar()
 {
 	//tomo la edad  
@@ -10,7 +11,8 @@ function mostrar()
 	{
 		alert("No sos adolecente" )
     }
-    
+}
+//FIN DE LA FUNCIÓN
 	// if (edad >  17) 
 	// {
 	// alert(" No sos adolecente")
@@ -21,7 +23,3 @@ function mostrar()
 	// 		alert("Es adolecente")
 	// }  
 	// }
-
-}
-
-//FIN DE LA FUNCIÓN

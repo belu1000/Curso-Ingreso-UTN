@@ -1,3 +1,4 @@
+//Alumna Belen Pantoja  39201936 div J   Ejercicio If  10
 function mostrar() {
 	//Genero el número RANDOM entre 1 y 10 
 	let numero;
@@ -14,13 +15,12 @@ function mostrar() {
 	else {
 		if (numero >= 4 && numero <= 8) {
 			alert("Aprobo");
-			
+
 		}
 		else {
-			if (numero >=9 && numero <= 10){
+			if (numero >= 9 && numero <= 10) {
 				alert("Excelente");
 			}
 		}
 	}
-
 }

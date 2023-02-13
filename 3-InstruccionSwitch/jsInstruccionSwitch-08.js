@@ -1,7 +1,7 @@
-function mostrar()
-{
+//// // //Alumna Belen Pantoja  39201936 div J   Ejercicio switch 8
+function mostrar() {
 	let destinoIngresado;
-	
+
 	destinoIngresado = document.getElementById("txtIdDestino").value;
 
 	switch (destinoIngresado) {
@@ -17,5 +17,4 @@ function mostrar()
 		default:
 			break;
 	}
-
 }//FIN DE LA FUNCIÓN

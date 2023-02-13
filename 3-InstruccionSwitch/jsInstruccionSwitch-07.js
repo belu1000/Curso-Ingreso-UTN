@@ -1,9 +1,9 @@
-function mostrar()
-{
+//// // //Alumna Belen Pantoja  39201936 div J   Ejercicio switch 7
+function mostrar() {
 	let destinoIngresado
-	
+
 	destinoIngresado = document.getElementById("txtIdDestino").value;
-	
+
 	switch (destinoIngresado) {
 		case "Bariloche":
 		case "Ushuaia":
@@ -17,5 +17,4 @@ function mostrar()
 		default:
 			break;
 	}
-
 }//FIN DE LA FUNCIÓN

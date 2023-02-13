@@ -1,3 +1,4 @@
+//// // //Alumna Belen Pantoja  39201936 div J   Ejercicio switch 9
 function mostrar() {
 	let estacionIngresada;
 	let destino;
@@ -24,52 +25,51 @@ function mostrar() {
 					porcentajeMonto = (PRECIOFIJO * 10) / 100;
 					precioFinal = PRECIOFIJO - porcentajeMonto;
 					break;
-			} 
-		}
+			}
+	}
 
-			switch (estacionIngresada) {
-				case "Verano":
-					switch (destino) {
-						case "Bariloche":
-							porcentajeMonto = (PRECIOFIJO * 20) / 100;
-							precioFinal = PRECIOFIJO - porcentajeMonto;
-							break;
-						case "Mar del plata":
-							porcentajeMonto = (PRECIOFIJO *20) / 100;
-							precioFinal = PRECIOFIJO + porcentajeMonto;
-							break;
-						case "Cataratas":
-						case "Cordoba":
-							porcentajeMonto = (PRECIOFIJO * 10) / 100;
-							precioFinal = PRECIOFIJO + porcentajeMonto;
-							break;
-					}
+	switch (estacionIngresada) {
+		case "Verano":
+			switch (destino) {
+				case "Bariloche":
+					porcentajeMonto = (PRECIOFIJO * 20) / 100;
+					precioFinal = PRECIOFIJO - porcentajeMonto;
+					break;
+				case "Mar del plata":
+					porcentajeMonto = (PRECIOFIJO * 20) / 100;
+					precioFinal = PRECIOFIJO + porcentajeMonto;
+					break;
+				case "Cataratas":
+				case "Cordoba":
+					porcentajeMonto = (PRECIOFIJO * 10) / 100;
+					precioFinal = PRECIOFIJO + porcentajeMonto;
 					break;
 			}
+			break;
+	}
 
-			switch (estacionIngresada) {
-				case "Primavera":
-				case "Otoño":
-					switch (destino) {
-						case "Bariloche":
-							porcentajeMonto = (PRECIOFIJO * 10) / 100;
-							precioFinal = PRECIOFIJO + porcentajeMonto;
-							break;
-						case "Mar del plata":
-							porcentajeMonto = (PRECIOFIJO * 10) / 100;
-							precioFinal = PRECIOFIJO +porcentajeMonto;
-							break;
-						case "Cataratas":
-							porcentajeMonto = (PRECIOFIJO* 10) / 100;
-							precioFinal = PRECIOFIJO + porcentajeMonto;
-							break;
-						case "Cordoba":
-							precioFinal = PRECIOFIJO;
-						default:
-							break;
-					}
+	switch (estacionIngresada) {
+		case "Primavera":
+		case "Otoño":
+			switch (destino) {
+				case "Bariloche":
+					porcentajeMonto = (PRECIOFIJO * 10) / 100;
+					precioFinal = PRECIOFIJO + porcentajeMonto;
+					break;
+				case "Mar del plata":
+					porcentajeMonto = (PRECIOFIJO * 10) / 100;
+					precioFinal = PRECIOFIJO + porcentajeMonto;
+					break;
+				case "Cataratas":
+					porcentajeMonto = (PRECIOFIJO * 10) / 100;
+					precioFinal = PRECIOFIJO + porcentajeMonto;
+					break;
+				case "Cordoba":
+					precioFinal = PRECIOFIJO;
+				default:
 					break;
 			}
-alert(" Este es su precio Final " + precioFinal);
-
+			break;
+	}
+	alert(" Este es su precio Final " + precioFinal);
 }//FIN DE LA FUNCIÓN

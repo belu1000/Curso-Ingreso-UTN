@@ -1,3 +1,4 @@
+//Alumna Belen Pantoja  39201936 div J   Ejercicio If  6
 function mostrar() {
 	//tomo la edad  
 	let edad;
@@ -16,10 +17,7 @@ function mostrar() {
 			if (estadoCivil == "Divorciado") {
 				alert("Es muy pequeño para  NO ser soltero");
 			}
-
 		}
 	}
-
 }
-
 //FIN DE LA FUNCIÓN

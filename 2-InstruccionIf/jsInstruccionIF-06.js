@@ -1,3 +1,4 @@
+//Alumna Belen Pantoja  39201936 div J   Ejercicio If  6
 function mostrar() {
 	let edad;
 
@@ -17,5 +18,4 @@ function mostrar() {
 		}
 	}
 }
-
   //FIN DE LA FUNCIÓN 

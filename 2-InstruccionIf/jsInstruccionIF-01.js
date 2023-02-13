@@ -1,3 +1,4 @@
+//Alumna Belen Pantoja  39201936 div J   Ejercicio If  1
 function mostrar() {
 	//tomo la edad
 
@@ -8,9 +9,5 @@ function mostrar() {
 
 	if (edad == 15) {
 		alert("niña bonita");
-
 	}
-
-
-
 }//FIN DE LA FUNCIÓN

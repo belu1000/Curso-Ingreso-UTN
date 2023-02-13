@@ -1,12 +1,12 @@
-function mostrar()
-{
+//// // //Alumna Belen Pantoja  39201936 div J   Ejercicio switch 6
+function mostrar() {
 	//tomo la hora
 	let horaDelDia;
-	
+
 	horaDelDia = document.getElementById("txtIdHora").value;
 	horaDelDia = parseInt(horaDelDia)
-	
-    switch (horaDelDia) {
+
+	switch (horaDelDia) {
 		case 7:
 		case 8:
 		case 9:
@@ -37,8 +37,8 @@ function mostrar()
 		case 5:
 		case 6:
 			alert("Es de noche");
-		break;
+			break;
 		default:
-		alert("La hora no existe")
+			alert("La hora no existe")
 	}
 }//FIN DE LA FUNCIÓN
