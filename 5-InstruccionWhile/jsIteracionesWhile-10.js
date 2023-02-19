@@ -13,11 +13,14 @@ hasta que el usuario quiera, mostrar:
 function mostrar()
 {
 	//declarar contadores y variables 
-	var respuesta;
-	var numeroIngresado;
-	var sumaNegativos=0;
-
-	respuesta="si";
+	let contador = 0;
+	let acumuladorPost =  0;
+	let pedirDato;
+	let banderaPositivo=false;
+	let banderaNegativos= false;
+	let acumuladorDeNeg= 1;
+	let respuesta = "si";
+	
 
 	while(respuesta=="si")
 	{

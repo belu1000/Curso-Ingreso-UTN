@@ -1,31 +1,82 @@
 // Concepto de Acumular
 function mostrar() {
-let numeroIngresado;
-let cantidadDeNumeros;
-let acumuladorDeNumeros;
-let promedio;
-let pregunta;
+let pedirNumero;
+let promedio ;
+let contador = 0;
+let suma = 0;
 
-const LIMITE = 5
-cantidadDeNumeros = 0 
-acumuladorDeNumeros = 0
-
-
-alert(cantidadDeNumeros);
-while (cantidadDeNumeros < LIMITE) {
-	numeroIngresado = prompt("Ingrese  un numero");
-	numeroIngresado = parseInt(numeroIngresado);
-
-	acumuladorDeNumeros = acumuladorDeNumeros + numeroIngresado;//Acumulador
-
-	cantidadDeNumeros = cantidadDeNumeros + 1;// contador
+while (contador < 5) {
+	contador = contador + 1;
+	pedirNumero = prompt("Escribi 5 numeros");
+	pedirNumero = parseFloat(pedirNumero);
+	suma = suma + pedirNumero;
 }
-// 
- promedio = acumuladorDeNumeros / cantidadDeNumeros;
-alert("La cantidad de ingresos fue  " + cantidadDeNumeros);
-alert("La acumulacion fue " + acumulacionDeNumeros);
-alert( "El promedio fue " + promedio);
+if (suma == 0) {
+	document.getElementById("txtIdPromedio").value = "Error no se puede calcular el promedio de 0";
 }
+else{
+	promedio = (suma / 5).toFixed();
+	document.getElementById("txtIdPromedio").value = " El promedio es " + promedio;
+}
+document.getElementById("txtIdSuma").value = "La suma es " +suma;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function mostrar() {
+// let numeroIngresado;
+// let cantidadDeNumeros;
+// let acumuladorDeNumeros;
+// let promedio;
+// let pregunta;
+
+// const LIMITE = 5
+// cantidadDeNumeros = 0 
+// acumuladorDeNumeros = 0
+
+
+// alert(cantidadDeNumeros);
+// while (cantidadDeNumeros < LIMITE) {
+// 	numeroIngresado = prompt("Ingrese  un numero");
+// 	numeroIngresado = parseInt(numeroIngresado);
+
+// 	acumuladorDeNumeros = acumuladorDeNumeros + numeroIngresado;//Acumulador
+
+// 	cantidadDeNumeros = cantidadDeNumeros + 1;// contador
+// }
+// // 
+//  promedio = acumuladorDeNumeros / cantidadDeNumeros;
+// alert("La cantidad de ingresos fue  " + cantidadDeNumeros);
+// alert("La acumulacion fue " + acumulacionDeNumeros);
+// alert( "El promedio fue " + promedio);
+// }
 
 
 

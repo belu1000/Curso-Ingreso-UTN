@@ -8,15 +8,11 @@ const FEMENINO = "f";
 
 pedirDato = prompt("Ingrese el genero");
 
-while (pedirDato != MACULINO && pedirDato != FEMENINO) {
+while (isNaN(pedirDato) == false || pedirDato != MACULINO && pedirDato != FEMENINO) {
 	pedirDato = prompt("Re ingrese el genero");
 
 }
-
 alert("Este es el genero  " + pedirDato);
-
-
-	
 }
 
 
