@@ -1,6 +1,7 @@
 /*
 Al presionar el botón pedir  números  hasta que el usuario quiera,
 mostrar el número máximo y el número mínimo ingresado.*/
+// Alumna Belen Pantoja dni 39201936 Div J Ejercicios While 9
 function mostrar() {
 let numeroIngresado ;
 let respuesta = "si";
@@ -10,7 +11,24 @@ let banderaPriVuelta = false;
 
 while (respuesta == "si" ) {
      numeroIngresado = prompt("Ingrese un  numero ");
-     numeroIngresado = parseFloat(numeroIngresado);
+     //Consigna extra:
+     //Validar que lo ingresado sea un numero
+     //Y que este entre el rango de -1000 y 1000.
+     //Si no es asi, volver a pedir
+    // isNaN("JU")
+    // true
+    // isNaN(98)
+    // false
+    numeroIngresado = parseFloat(numeroIngresado);
+     while (isNaN(numeroIngresado) == true || numeroIngresado < -1000 || numeroIngresado > 1000) {
+        numeroIngresado = prompt("Re ingrese un numero entre 1000 y -1000");
+        numeroIngresado = parseFloat(numeroIngresado);
+     }
+
+
+
+     
+     
 
      //Para saber si estamos en la primera vuelta o no 
     if(banderaPriVuelta == false){
@@ -30,16 +48,10 @@ while (respuesta == "si" ) {
             }
         }
     }
-
-        
     respuesta = prompt("Desea Ingresar más numeros ", "si");
 }
 document.getElementById("txtIdMaximo").value = "Tu maximo es  " + max;
 document.getElementById("txtIdMinimo").value ="Tu minimo es " + min;
-
-
-
-	
 }
 
 

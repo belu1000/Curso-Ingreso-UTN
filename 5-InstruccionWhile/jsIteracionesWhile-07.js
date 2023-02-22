@@ -2,6 +2,7 @@
 Al presionar el botón pedir  números  hasta que el USUARIO QUIERA 
 e informar la suma acumulada y el promedio.
 */
+// Alumna Belen Pantoja dni 39201936 Div J Ejercicios While 7
 function mostrar()
 {
 	let contador;

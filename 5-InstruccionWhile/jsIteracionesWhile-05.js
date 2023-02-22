@@ -1,6 +1,7 @@
 /*
 Al presionar el botón pedir un sexo
 'f' para femenino, 'm' para masculino.*/
+// Alumna Belen Pantoja dni 39201936 Div J Ejercicios While 5
 function mostrar() {
 let pedirDato;
 const MACULINO = "m";

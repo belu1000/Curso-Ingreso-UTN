@@ -1,3 +1,4 @@
+// Alumna Belen Pantoja dni 39201936 Div J Ejercicios While 6
 // Concepto de Acumular
 function mostrar() {
 let pedirNumero;

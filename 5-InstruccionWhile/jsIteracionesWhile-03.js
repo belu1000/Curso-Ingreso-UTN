@@ -1,5 +1,6 @@
 /*
 al presionar el botón pedir la CLAVE (ayuda: es utn750)*/
+// Alumna Belen Pantoja dni 39201936 Div J Ejercicios While 3
 function mostrar()
 {
 	let claveIngresada;
@@ -18,4 +19,4 @@ function mostrar()
 
 
 
- 
+

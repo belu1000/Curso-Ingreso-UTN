@@ -46,7 +46,7 @@ function mostrar() {
 	}
 
 	switch (estacionIngresada) {
-		case Bariloche:
+		case "Bariloche":
 
 			break;
 		case "Cataratas":

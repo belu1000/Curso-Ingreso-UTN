@@ -1,6 +1,7 @@
 /*
 al presionar el botón 
 pedir un número entre 0 y 9 inclusive.*/
+// Alumna Belen Pantoja dni 39201936 Div J Ejercicios While 4
 function mostrar(){
 		let pedirDato;
 		const MAXIMO = 9;

@@ -1,6 +1,7 @@
 /*
 Al presionar el botón pedir  números  hasta que el usuario quiera,
 sumar los que son positivos y multiplicar los negativos.*/
+// Alumna Belen Pantoja dni 39201936 Div J Ejercicios While 8
 function mostrar()
 {
 let contador = 0;
