@@ -1,18 +1,18 @@
-/*RISING BTL. Empresa dedicada a la toma de datos para realizar estadísticas y censos nos pide realizar una carga de datos validada e ingresada por ventanas emergentes solamente (para evitar hacking y cargas maliciosas) y luego asignarla a cuadros de textos. 
-12.   Los datos requeridos son los siguientes:
-A.	Edad, entre 18 y 90 años inclusive.
-B.	Sexo, “M” para masculino y “F” para femenino
-C.	Estado civil, 1-para soltero, 2-para casados, 3-para divorciados y 4-para viudos
-D.	Sueldo bruto, no menor a 8000.
-E.	Número de legajo, numérico de 4 cifras, sin ceros a la izquierda.
-F.	Nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para nacionalizados.
- */
-// Alumna Belen Pantoja Div J TP 12 While
+// /*RISING BTL. Empresa dedicada a la toma de datos para realizar estadísticas y censos nos pide realizar una carga de datos validada e ingresada por ventanas emergentes solamente (para evitar hacking y cargas maliciosas) y luego asignarla a cuadros de textos. 
+// 12.   Los datos requeridos son los siguientes:
+// A.	Edad, entre 18 y 90 años inclusive.
+// B.	Sexo, “M” para masculino y “F” para femenino
+// C.	Estado civil, 1-para soltero, 2-para casados, 3-para divorciados y 4-para viudos
+// D.	Sueldo bruto, no menor a 8000.
+// E.	Número de legajo, numérico de 4 cifras, sin ceros a la izquierda.
+// F.	Nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para nacionalizados.
+//  */
+// // Alumna Belen Pantoja Div J TP 12 While
 function ComenzarIngreso() {
-	// definicion de variables
+// 	// definicion de variables
 	let edadIngresada;
 
-	// CONSIGNA A
+// 	// CONSIGNA A
 	edadIngresada = prompt("Ingresa tu edad");
 	edadIngresada = parseInt(edadIngresada);
 	while (isNaN(edadIngresada) == true || edadIngresada <= 17 || edadIngresada >= 91) {
@@ -35,16 +35,16 @@ function ComenzarIngreso() {
 
 	document.getElementById("txtIdSexo").value = sexoIngresado;
 
-	// Consiga C
+// 	// Consiga C
 	let estadoCivil;
 	let salidaEstadoCivil;
 
 	estadoCivil = prompt("Ingrese su estado civil de acuerdo a : 1 Soltero, 2 Casado, 3 Divorciado, 4 Viudo");
-	// estadoCivil = parseInt(estadoCivil);
+	estadoCivil = parseInt(estadoCivil);
 
 	while(isNaN(estadoCivil)== true || estadoCivil <= 0 || estadoCivil >=5){
 		estadoCivil = prompt("Re ingresa un estado Civil valido");
-		// estadoCivil = parseInt(estadoCivil);
+		estadoCivil = parseInt(estadoCivil);
 
 	}
 	switch (estadoCivil) {
@@ -66,7 +66,7 @@ function ComenzarIngreso() {
 	}
 document.getElementById("txtIdEstadoCivil").value = salidaEstadoCivil;
 
-// Consigna D
+// // Consigna D
 let sueldoBruto;
 
 sueldoBruto =prompt("Ingresa un sueldo bruto superior a 8000");
@@ -87,7 +87,7 @@ while (isNaN(legajo)== true || legajo <1000 || legajo >= 10000) {
 	legajo = prompt("Re ingresa un numero de 4 digitos");
 	legajo = parseInt(legajo);
 }
-document.getElementById("txtIdLegajo").value = "Numero de Legajo es  "+legajo
+document.getElementById("txtIdLegajo").value = "Numero de Legajo es  "+legajo;
 
 // consigan F
 let Nacionalidad = prompt("Ingresa tu nacionalidad  teniendo en cuenta : A -para Argentino, E-Extranjeros, N-Nacionalizados");
@@ -106,7 +106,7 @@ switch (Nacionalidad) {
 		salidaNacionalidad ="Extranjeros";
 	break
 	case "N":
-		salidaNacionalidad ="Nacionalizados"
+		salidaNacionalidad ="Nacionalizados";
 	break;
 }
 document.getElementById("txtIdNacionalidad").value ="Nacionalida es "+salidaNacionalidad;

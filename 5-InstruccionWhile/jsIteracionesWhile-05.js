@@ -4,8 +4,8 @@ Al presionar el botón pedir un sexo
 // Alumna Belen Pantoja dni 39201936 Div J Ejercicios While 5
 function mostrar() {
 let pedirDato;
-const MACULINO = "m";
-const FEMENINO = "f";
+const MACULINO = "masculino";
+const FEMENINO = "femenino";
 
 pedirDato = prompt("Ingrese el genero");
 
@@ -13,7 +13,7 @@ while (isNaN(pedirDato) == false || pedirDato != MACULINO && pedirDato != FEMENI
 	pedirDato = prompt("Re ingrese el genero");
 
 }
-alert("Este es el genero  " + pedirDato);
+document.getElementById("txtIdSexo").value = "Este es el genero  " + pedirDato;
 }
 
 

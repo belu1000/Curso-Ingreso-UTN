@@ -25,11 +25,6 @@ while (respuesta == "si" ) {
         numeroIngresado = parseFloat(numeroIngresado);
      }
 
-
-
-     
-     
-
      //Para saber si estamos en la primera vuelta o no 
     if(banderaPriVuelta == false){
         max = numeroIngresado;
