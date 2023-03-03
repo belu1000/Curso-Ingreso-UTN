@@ -1,6 +1,6 @@
 // PEDIR X CANTIDAD AL USUARIO
 const MAX_PEDIDOS = 5;
-let precio;
+let acumuladorPrecioTotalWhileGrande;
 let  contadorFactura= 0;
 const  MENSAJE_PEDIR = "MENSAJE DE PEDIR AL USUARIO";
 
