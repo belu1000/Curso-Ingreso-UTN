@@ -17,83 +17,209 @@
 // 3-Cantidad de estudiantes que tocan piano y tienen más de 12 años. 
 // 4-La actividad que posee menos estudiantes.
 function mostrar() {
-    let respuesta = "si"
-    let nombre;
-    let instrumento;
-    let edad;
-    let horas;
-    let precio;
+let respuesta= "si"
+let nombre;
+let Instrumento;
+let edad;
+let horasPorSemana;
+let precioPorHora;
+let bandera=false;
+let masEstudiantePorSemana;
+let contadorBateria = 0;
+let contadorGuitarra=0;
+let contadorPiano=0;
+let contadorPianoMasDoce=0;
+let menorActividad;
 
-    let acumTotalRecaudado = 0;
-    const DESCUENTO = 10;
-    let bandera = false;
-    let estudianteMasHorasNombre;
-    let estudianteMasHorasCantidad;
-    let contEstudiantesPiano = 0;    
-    while (respuesta == "si") {        
-        nombre = prompt("Ingrese el nombre  del estudiante");
-        while (isNaN(nombre) == false) {
-            nombre = prompt("Re ingrese el nombre ");
-        }
-
-        instrumento = prompt("Ingrese el instrumento");
-        while (isNaN(instrumento) == false || instrumento != "guitarra" && instrumento != "piano" && instrumento != "batería") {
-            instrumento = prompt("Re ingrese el intrumento");
-        }
-
-        edad = prompt("Ingrese la edad");
-        edad = parseInt(edad);
-        while (isNaN(edad) == true || edad < 7 && edad > 18) 
-        {
-            edad=prompt("Re ingrese la edad");
-            edad=parseInt(edad);
-        }
-
-        horas=prompt("Ingrese las horas");
-        horas=parseInt(horas);
-        while (isNaN(horas)==true||horas < 0 && horas >57) {
-            horas=prompt("Re ingresa las horas ");
-        }
-
-        precio=prompt("Ingrese el precio");
-        precio=parseInt(precio);
-        while (isNaN(precio)==true||precio<200 && precio>500) {
-            precio=prompt("RE ingres eel precio ");
-        }
-        respuesta = prompt("Desea seguir ingresando?");
-        
-        if(horas > 30){
-            precio = precio * DESCUENTO / 100;
-            alert("Se aplico un descuento ");
-        }
-        switch (instrumento) {
-            case "guitarra":
-                
-                break;
-            case "piano":
-                if(edad > 12){
-                    contEstudiantesPiano = contEstudiantesPiano + 1;
-                }
-                break;
-            case "batería":
-                if(bandera == false){
-                    estudianteMasHorasNombre = nombre;
-                    estudianteMasHorasCantidad = horas;
-                }
-                else{
-                    if(horas > estudianteMasHorasCantidad){
-                        estudianteMasHorasNombre = nombre;
-                        estudianteMasHorasCantidad = horas;
-                    }
-                }
-                break;
-            default:
-                break;
-        }
-        acumTotalRecaudado = acumTotalRecaudado + precio;
+while (respuesta="si"){
+    nombre=prompt("Ingresa el nombre");
+    
+    while (isNaN(nombre)==false) {
+        nombre=prompt("Re ingrese el nombre");
     }
 
-    alert("El total recaudado por los alumnos es de :" + acumTotalRecaudado);
-    alert("El estudiante con mas horas se llama" + estudianteMasHorasNombre + "e hizo " + estudianteMasHorasCantidad + " de horas");
-    alert("Total de alumnos que tocan piano y tienen mas de 12 años es de :"+ contEstudiantesPiano);
+    Instrumento=prompt("Ingrese el Instrumento");
+    while (isNaN(Instrumento)==false|| Instrumento!="guitarra"&& Instrumento!="piano"&& instrumento!="batería") {
+        instrumento=prompt("Re Ingrese el instrumento");
+    }
+
+    edad=prompt("Ingrese la edad ");
+    edad=parseFloat(edad);
+    while (isNaN(edad)==true|| edad <7 && edad>18) {
+        edad=prompt("Re ingrese la edad");
+        edad=parseInt(edad);
+    }
+
+    horasPorSemana=prompt("Ingrese la horas de estudio por semana");
+    horasPorSemana= parseInt(horasPorSemana);
+    while (isNaN(horasPorSemana)==true|| horasPorSemana <0 && horasPorSemana >57) {
+        horasPorSemana=prompt("Re Ingrese la horas de estudio por semana");
+        horasPorSemana= parseInt(horasPorSemana);
+    }
+
+    precioPorHora=prompt("Ingresa el precio por horas");
+    precioPorHora= parseInt(precioPorHora);
+    while (isNaN(precioPorHora)==true|| precioPorHora<200 && precioPorHora>500) {
+        precioPorHora=prompt("Re Ingresa el precio por horas");
+        precioPorHora= parseInt(precioPorHora);
+    }
+
+    precioBruto=precioPorHora*horasPorSemana;
+    if(horasPorSemana>30){
+        descuento=(precioBruto*10)/100;
+        alert("El descuento es del 10% "+descuento);
+    }
+
+    switch (instrumento) {
+        case "bateria":
+            contadorBateria=contadorBateria+1;
+            if (bandera==false) {
+                masEstudiantePorSemana=horasPorSemana;
+            }
+            else{
+                if(horasPorSemana>masEstudiantePorSemana)
+                masEstudiantePorSemana=horasPorSemana;
+            }
+            break;
+        case"piano":
+            contadorPiano=contadorPiano+1;
+            if (edad >12) {
+                contadorPianoMasDoce= contadorPianoMasDoce+1;
+            }
+            else
+            break;
+        case "guitarra":
+            contadorGuitarra= contadorGuitarra+1;
+            break;
+    }
+
+respuesta= prompt("Desea seguir ingresando?");
+}
+
+if(contadorBateria< contadorPiano&&contadorBateria< contadorGuitarra){
+    menorActividad="Bateria es la menor actividad con " + contadorBateria;
+}
+else{
+    if(contadorPiano<contadorBateria&& contadorPiano< contadorGuitarra){
+        menorActividad="Piano es la menor actividad con " +contadorPiano;
+    }
+    else{
+        menorActividad="Guitarra con la menor "+contadorGuitarra
+    }
+}
+
+alert( "El total recaudado de todos los estudiantes es "+ precioBruto +);
+alert("La Cantidad de estudiantes que tocan piano y tienen más de 12 años es" +contadorPianoMasDoce);
+alert(menorActividad);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // let respuesta = "si"
+    // let nombre;
+    // let instrumento;
+    // let edad;
+    // let horas;
+    // let precio;
+
+    // let acumTotalRecaudado = 0;
+    // const DESCUENTO = 10;
+    // let bandera = false;
+    // let estudianteMasHorasNombre;
+    // let estudianteMasHorasCantidad;
+    // let contEstudiantesPiano = 0;    
+    // while (respuesta == "si") {        
+    //     nombre = prompt("Ingrese el nombre  del estudiante");
+    //     while (isNaN(nombre) == false) {
+    //         nombre = prompt("Re ingrese el nombre ");
+    //     }
+
+    //     instrumento = prompt("Ingrese el instrumento");
+    //     while (isNaN(instrumento) == false || instrumento != "guitarra" && instrumento != "piano" && instrumento != "batería") {
+    //         instrumento = prompt("Re ingrese el intrumento");
+    //     }
+
+    //     edad = prompt("Ingrese la edad");
+    //     edad = parseInt(edad);
+    //     while (isNaN(edad) == true || edad < 7 && edad > 18) 
+    //     {
+    //         edad=prompt("Re ingrese la edad");
+    //         edad=parseInt(edad);
+    //     }
+
+    //     horas=prompt("Ingrese las horas");
+    //     horas=parseInt(horas);
+    //     while (isNaN(horas)==true||horas < 0 && horas >57) {
+    //         horas=prompt("Re ingresa las horas ");
+    //     }
+
+    //     precio=prompt("Ingrese el precio");
+    //     precio=parseInt(precio);
+    //     while (isNaN(precio)==true||precio<200 && precio>500) {
+    //         precio=prompt("RE ingres eel precio ");
+    //     }
+    //     respuesta = prompt("Desea seguir ingresando?");
+        
+    //     if(horas > 30){
+    //         precio = precio * DESCUENTO / 100;
+    //         alert("Se aplico un descuento ");
+    //     }
+    //     switch (instrumento) {
+    //         case "guitarra":
+                
+    //             break;
+    //         case "piano":
+    //             if(edad > 12){
+    //                 contEstudiantesPiano = contEstudiantesPiano + 1;
+    //             }
+    //             break;
+    //         case "batería":
+    //             if(bandera == false){
+    //                 estudianteMasHorasNombre = nombre;
+    //                 estudianteMasHorasCantidad = horas;
+    //             }
+    //             else{
+    //                 if(horas > estudianteMasHorasCantidad){
+    //                     estudianteMasHorasNombre = nombre;
+    //                     estudianteMasHorasCantidad = horas;
+    //                 }
+    //             }
+    //             break;
+    //         default:
+    //             break;
+    //     }
+    //     acumTotalRecaudado = acumTotalRecaudado + precio;
+    // }
+
+    // alert("El total recaudado por los alumnos es de :" + acumTotalRecaudado);
+    // alert("El estudiante con mas horas se llama" + estudianteMasHorasNombre + "e hizo " + estudianteMasHorasCantidad + " de horas");
+    // alert("Total de alumnos que tocan piano y tienen mas de 12 años es de :"+ contEstudiantesPiano);
 }

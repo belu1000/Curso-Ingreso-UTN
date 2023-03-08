@@ -19,6 +19,13 @@ d)Nombre, raza y edad del perro más viejo ingresado
 
 function mostrar()
 {
-  alert("uno");
+	let raza;
+  while (seguis == 'si') {
+	raza = prompt("Ingrese la raza del perro (sharpei, galgo, pastor):");
+	while (raza != 'sharpei' && raza != 'galgo' && raza != 'pastor') {
+		raza = prompt("Raza inválida. Ingrese la raza del perro (sharpei, galgo, pastor):");
+	}
+	
+  }
 
 }
